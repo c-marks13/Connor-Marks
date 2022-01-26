@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Overpass+Mono:wght@600&display=swap');
+
+/* Universal White Space Rule */
+* { padding: 0; margin: 0 }
+
+/* Removes anchors defualt styling */
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styles the top navigation bar */
+#Top-Nav{
+    padding: 11px;
+    overflow: hidden;
+    background-color: grey;
+    color: #ECECEC;
+}
+
+ul{
+  list-style: none;
+  margin: 0px auto;
+}
+
+/* Styles the items in top navigation bar exlcuding the first element*/
+ul.Top-Nav-Items-List li.Item > a{
+    float: left;
+    list-style: none;
+    margin: 0px 15px 0px 15px;
+    width: 150px;
+    font-size: 15px;
+    font-family: "Overpass Mono", monospace;
+    font-weight: bolder;
+    letter-spacing: .07em;
+    text-decoration-line:none;
+    color: white;
+}
+
+/* Styles the items in top navigation bar exlcuding the first element*/
+ul.Top-Nav-Items-List li.Item>a>span{
+    margin-left: 5px;
+}
+
+/* Styles everything in the top navigation bar except the first element when the mouse is hovered over it */
+ul.Top-Nav-Items-List li.Item>a:hover{
+    color: black;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Styles the background of the 'Top Section' of the webpage*/
+#Top-Section{
+    overflow: hidden;
+    background-image: url("Assets/code.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#Top-Section>article{
+  font-size: 100px;
+  margin: 100px 50px;
+  background-color: grey;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  height: 75vh;
+  width: 90vw;
+  font-size: 5vw;
+  padding: 20px;
+}
+
+#Top-Section>article>img{
+   float: right;
+   width: 40vw;
+   display: inline-block;
+   margin-right: 5vw;
+   vertical-align: middle;
+   max-height: 300px;
+}
+
+ section.content{
+  font-size: 100px;
+  background-color: grey;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  height:100vh;
+  font-size: 5vw;
+  font-family: "Overpass Mono", monospace;
+  padding: 10px;
+}
+
+button#ToTopBTN{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 1px 50px;
+  color: white;
+  background-color: #4287FF;
+  font-family: "Overpass Mono", monospace;
+}
+
+button#ToTopBTN:hover{
+  background-color: #96BCFF;
+}
