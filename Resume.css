@@ -3,10 +3,8 @@
 /* Universal White Space Rule */
 * { padding: 0; margin: 0 }
 
-/* Removes anchors defualt styling */
-a, a:hover, a:focus, a:active {
-  text-decoration: none;
-  color: inherit;
+html {
+  scroll-behavior: smooth;
 }
 
 /* Styles the top navigation bar */
@@ -36,12 +34,18 @@ ul.Top-Nav-Items-List li.Item > a{
     color: white;
 }
 
-ul.Top-Nav-Items-List li.Nav-Menu > a > span > div {
-  width: 35px;
-  height: 5px;
+ul.Top-Nav-Items-List li#Nav-Menu > a > span > div {
+  width: 20px;
+  height: 3px;
   background-color: white;
-  margin: 6px 0;
+  margin-top: 3px;
+}
+
+ul.Top-Nav-Items-List li#Nav-Menu{
   float: right;
+  list-style: none;
+  margin-right: 5px;
+  display: none;
 }
 
 /* Styles the items in top navigation bar exlcuding the first element*/
