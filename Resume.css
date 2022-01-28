@@ -13,6 +13,8 @@ html {
     overflow: hidden;
     background-color: grey;
     color: #ECECEC;
+    width: 100vw;
+    position: fixed;
 }
 
 ul{
@@ -46,7 +48,7 @@ ul.Top-Nav-Items-List li#Nav-Menu > a > span > div {
   width: 20px;
   height: 3px;
   background-color: white;
-  margin-top: 3px;
+  margin: 3px 20px 0 0;
 }
 
 @media only screen and (max-width: 745px){
@@ -95,7 +97,7 @@ ul.Top-Nav-Items-List li.Item>a:hover{
 
 #Top-Section>article{
   font-size: 100px;
-  margin: 100px 50px;
+  margin: 12.5vw auto;
   background-color: grey;
   color: white;
   border-style: solid;
@@ -107,7 +109,7 @@ ul.Top-Nav-Items-List li.Item>a:hover{
 }
 
 #Top-Section>article>img{
-   float: right;
+   /*float: right;*/
    width: 40vw;
    display: inline-block;
    margin-right: 5vw;
@@ -125,6 +127,14 @@ ul.Top-Nav-Items-List li.Item>a:hover{
   font-size: 5vw;
   font-family: "Overpass Mono", monospace;
   padding: 10px;
+}
+
+section.content:nth-child(even){
+  background-color: #0b1254;
+}
+
+section.content:nth-child(odd){
+  background-color: #083d52;
 }
 
 button#ToTopBTN{
