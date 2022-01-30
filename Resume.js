@@ -1,21 +1,22 @@
-// When the user scrolls down 20px from the top of the document, show the button
-/*
-window.onscroll = function() {scrollFunction()};
+window.onload = function() {navMenu()};
 
-function scrollFunction() {
+function navMenu() {
   //Get the button
-  var toTop = document.getElementById("ToTopBTN");
-
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    toTop.style.display = "block";
-  } else {
-    toTop.style.display = "none";
-  }
+  var nm = document.getElementById("Nav-Menu");
+  var x = document.getElementById("DropDown");
+  x.style.display = "none";
+  nm.addEventListener("click", openMenu);
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+function openMenu() {
+  console.log(1);
+  var x = document.getElementById("DropDown");
+
+  if(x.style.display == "none"){
+    x.style.display = "block";
+  }
+  else {
+    x.style.display = "none";
+  }
 }
-*/
