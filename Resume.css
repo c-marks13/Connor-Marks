@@ -21,20 +21,26 @@ html {
   display: none;
   position: fixed;
   background: grey;
-  top: 43px;
-  right: 3px;
+  top: 45px;
+  right: 5px;
   width: 145px;
-  height: 75px;
+  height: 100px;
   font-family: "Overpass Mono", monospace;
   border-radius: 5px;
 }
 
 #DropDown>*{
+  display: block;
   margin: 10px;
   font-size: 15px;
   letter-spacing: .07em;
   color: white;
   text-decoration: none;
+  width: 125px;
+}
+
+#DropDown:hover{
+  cursor: pointer;
 }
 
 #DropDown>*:hover{
