@@ -27,6 +27,9 @@ html {
   height: 100px;
   font-family: "Overpass Mono", monospace;
   border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
 }
 
 #DropDown>*{
