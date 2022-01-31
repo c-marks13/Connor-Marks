@@ -15,6 +15,7 @@ function navMenu() {
   }
 
   window.onscroll = closeMenu;
+  window.addEventListener('resize', closeMenu);
 }
 
 // When the user clicks on the button, scroll to the top of the document
