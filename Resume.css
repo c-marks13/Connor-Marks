@@ -5,7 +5,13 @@
 
 html {
   scroll-behavior: smooth;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+@supports(padding:max(0px)) {
+    body, header, footer {
+        padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
+    }
 }
 
 /* Styles the top navigation bar */
@@ -235,7 +241,7 @@ footer>div#bottom{
 
 /* Styles paragraphs in the bottom section of the footer */
 footer>div#bottom>p{
-  color: red;
+  color: white;
   width: 115px;
   padding: 13px;
   margin: 0 auto;
