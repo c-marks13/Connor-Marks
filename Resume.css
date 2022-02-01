@@ -42,7 +42,7 @@ html {
   width: 125px;
 }
 
-#DropDown:hover{
+#Nav-Menu:hover{
   cursor: pointer;
 }
 
@@ -159,7 +159,7 @@ ul.Top-Nav-Items-List li.Item>a:hover{
   color: white;
   border-style: solid none;
   border-color: white;
-  height:100vh;
+  height:75vh;
   font-size: 5vw;
   font-family: "Overpass Mono", monospace;
   padding: 10px;
@@ -173,42 +173,29 @@ section.content:nth-child(odd){
   background-color: #244aa3;
 }
 
-button#ToTopBTN{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 1px 50px;
-  color: white;
-  background-color: #4287FF;
-  font-family: "Overpass Mono", monospace;
-}
-
-button#ToTopBTN:hover{
-  background-color: #96BCFF;
-}
-
 /* Styles the overall footer */
 footer{
-    height: calc(220px - 15vw);
-    min-height: 110px;
-    padding: 4px 20px 5px 3px;
     background-color: grey;
 }
 
-footer>section#Top-Footer-Section, footer>section#Bottom-Footer-Section{
-  display: block;
+footer>div#top{
+  height: 75px;
 }
 
 /* Styles h2 headings in the top section of the footer */
 footer>div#top>h2{
-  font-size: 30px;
+  display: block;
+  width: 225px;
+  margin: 3px auto;
+  padding-top: 4px;
+  font-size: 25px;
   font-weight: 600;
   padding-bottom: 2px;
   color: white;
 }
 
 /* Styles social meadia icons in the top section of the footer */
-footer>div#top>ul.Social-Media>li>a.Icon{
+footer>div#top>div#Social-Media>ul>li>a.Icon{
   display: block;
   float: left;
   margin-top: 5px;
@@ -217,30 +204,33 @@ footer>div#top>ul.Social-Media>li>a.Icon{
 }
 
 /* Styles social meadia icons in the top section of the footer when they are hovered on*/
-footer>div#top>ul.Social-Media>li>a.Icon:hover{
+footer>div#top>div#Social-Media>ul>li>a.Icon:hover{
   color: blue;
   cursor: pointer;
 }
 
 /* Removes the list style of the social media icons */
-footer>div#top>ul.Social-Media>li{
+footer>div#top>div#Social-Media>ul>li{
   list-style: none;
 }
 
+/* Removes the list style of the social media icons */
+footer>div#top>div#Social-Media{
+  width: 237px;
+  margin: auto;
+}
+
 /* Styles the bottom section of the footer */
-footer>div.bottom{
+footer>div#bottom{
   height: 40px;
-  width: 100%;
   background-color: black;
 }
 
 /* Styles paragraphs in the bottom section of the footer */
-footer>div.bottom>p{
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #959595;
+footer>div#bottom>p{
+  color: white;
+  width: 115px;
+  padding: 13px;
+  margin: 0 auto;
   font-size: 12px;
 }
