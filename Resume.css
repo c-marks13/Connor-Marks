@@ -148,6 +148,7 @@ ul.Top-Nav-Items-List li.Item>a:hover{
   padding: 20px;
   border-radius: 20px;
   max-width: 800px;
+  overflow: scroll;
 }
 
 #Top-Section>article>img{
@@ -224,6 +225,7 @@ td.degree{
 table#Education-Table{
   width: 80vw;
   max-width: 820px;
+  min-width: 492px;
   display: table;
   margin: auto;
 }
