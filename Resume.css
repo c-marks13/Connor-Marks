@@ -59,7 +59,7 @@ html {
   color: black;
 }
 
-ul{
+ul.Top-Nav-Items-List{
   list-style: none;
   margin: 0px auto;
 }
@@ -174,15 +174,9 @@ ul.Top-Nav-Items-List li.Item>a:hover{
   color: white;
   border-style: solid none;
   border-color: white;
-  height:75vh;
+  height:auto;
   font-family: "Overpass Mono", monospace;
   padding-top: 50px;
-}
-
-@media screen and (max-width: 620px){
-  section.content{
-   height:85vh;
-  }
 }
 
 section.content:nth-child(even){
@@ -197,6 +191,7 @@ section.content#Experience>article>h2{
   width: 350px;
   padding-left: 20px;
   background: #193370;
+  margin-bottom: 30px;
 }
 
 section.content#Education>h2{
@@ -231,7 +226,7 @@ td.degree{
 
 #Education-Table, #Skills-Table{
   position: relative;
-  width: 80%;
+  width: 90%;
   max-width: 820px;
   display: table;
   margin: 25px auto;
@@ -241,6 +236,48 @@ td.degree{
 td.degree, td.UWL{
   padding: 20px;
 }
+/* ------- Section Break ------- */
+
+#Experience{
+  height: auto;
+}
+
+#Experience>article>table{
+  margin-right: 30px;
+  font-family: serif;
+  font-size: 20px;
+  border: 5px solid black;
+  border-spacing: 0px;
+  margin: 25px auto;
+  width: 800px
+}
+
+#Experience>article>table>caption{
+  font-size: 30px;
+}
+
+@media screen and (max-width: 850px){
+  #Experience>article>table{
+    width: 90vw;
+    max-width: 650px;
+  }
+}
+
+.responsibility:nth-child(odd){
+  background-color: grey;
+}
+
+.responsibility:nth-child(even){
+  background-color: black;
+}
+
+.responsibility>td{
+  border: 2px solid black;
+  padding: 5px;
+}
+
+/* ------- Section Break ------- */
+
 
 #Skills-Table{
     border: 5px solid #244aa3;
