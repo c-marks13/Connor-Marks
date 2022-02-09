@@ -17,7 +17,6 @@ html {
 /* Styles the top navigation bar */
 #Top-Nav{
     padding: 11px;
-    overflow: hidden;
     background-color: grey;
     color: #ECECEC;
     width: 100vw;
@@ -178,6 +177,12 @@ ul.Top-Nav-Items-List li.Item>a:hover{
   padding-top: 50px;
 }
 
+@media screen and (max-width: 620px){
+  section.content{
+   height:85vh;
+  }
+ }
+
 section.content:nth-child(even){
   background-color: #193370;
 }
@@ -222,16 +227,42 @@ td.degree{
   font-size: calc(23px + 1.8vw);
 }
 
-table#Education-Table{
-  width: 80vw;
+#Education-Table, #Skills-Table{
+  position: relative;
+  width: 80%;
   max-width: 820px;
-  min-width: 492px;
   display: table;
-  margin: auto;
+  margin: 25px auto;
 }
 
 td.degree, td.UWL{
   padding: 20px;
+}
+
+#Skills-Table{
+    border: 5px solid black;
+}
+
+.skills{
+  color: black;
+  font-family: serif;
+  font-size: calc(23px + 1.6vw);
+  padding: 5px;
+}
+
+.Skills-Row:nth-child(odd){
+  background-color: #b3b3b3;
+}
+
+.Skills-Row:nth-child(even){
+  background-color: #d6d6d6;
+}
+
+@media screen and (min-width: 1104px){
+  .skills{
+    font-family: serif;
+    font-size: 40px;
+  }
 }
 
 /* Styles the overall footer */
