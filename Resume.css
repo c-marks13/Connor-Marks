@@ -16,11 +16,13 @@ html {
 
 /* Styles the top navigation bar */
 #Top-Nav{
+    overflow: hidden;
     padding: 11px;
     background-color: grey;
     color: #ECECEC;
     width: 100vw;
     position: fixed;
+    z-index: 2;
 }
 
 #DropDown{
@@ -181,7 +183,7 @@ ul.Top-Nav-Items-List li.Item>a:hover{
   section.content{
    height:85vh;
   }
- }
+}
 
 section.content:nth-child(even){
   background-color: #193370;
@@ -224,7 +226,7 @@ td.UWL>img{
 td.degree{
   width: 70vw;
   font-family: serif;
-  font-size: calc(23px + 1.8vw);
+  font-size: calc(23px + 1vw);
 }
 
 #Education-Table, #Skills-Table{
@@ -233,6 +235,7 @@ td.degree{
   max-width: 820px;
   display: table;
   margin: 25px auto;
+  z-index: 1;
 }
 
 td.degree, td.UWL{
@@ -240,13 +243,14 @@ td.degree, td.UWL{
 }
 
 #Skills-Table{
-    border: 5px solid black;
+    border: 5px solid #244aa3;
+    border-radius: 10px;
 }
 
 .skills{
   color: black;
   font-family: serif;
-  font-size: calc(23px + 1.6vw);
+  font-size: 30px;
   padding: 5px;
 }
 
@@ -258,9 +262,8 @@ td.degree, td.UWL{
   background-color: #d6d6d6;
 }
 
-@media screen and (min-width: 1104px){
+@media screen and (min-width: 950px){
   .skills{
-    font-family: serif;
     font-size: 40px;
   }
 }
@@ -277,7 +280,7 @@ footer>div#top{
 /* Styles h2 headings in the top section of the footer */
 footer>div#top>h2{
   display: block;
-  width: 225px;
+  width: 210px;
   margin: 3px auto;
   padding-top: 4px;
   font-size: 25px;
@@ -308,7 +311,7 @@ footer>div#top>div#Social-Media>ul>li{
 
 /* Removes the list style of the social media icons */
 footer>div#top>div#Social-Media{
-  width: 237px;
+  width: 140px;
   margin: auto;
 }
 
