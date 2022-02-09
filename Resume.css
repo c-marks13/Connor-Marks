@@ -177,6 +177,7 @@ ul.Top-Nav-Items-List li.Item>a:hover{
   height:auto;
   font-family: "Overpass Mono", monospace;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 section.content:nth-child(even){
@@ -249,18 +250,12 @@ td.degree, td.UWL{
   border: 5px solid black;
   border-spacing: 0px;
   margin: 25px auto;
-  width: 800px
+  width: 95vw;
+  max-width: 820px;
 }
 
 #Experience>article>table>caption{
   font-size: 30px;
-}
-
-@media screen and (max-width: 850px){
-  #Experience>article>table{
-    width: 90vw;
-    max-width: 650px;
-  }
 }
 
 .responsibility:nth-child(odd){
@@ -282,6 +277,7 @@ td.degree, td.UWL{
 #Skills-Table{
     border: 5px solid #244aa3;
     border-radius: 10px;
+    border-spacing: 0px;
 }
 
 .skills{
