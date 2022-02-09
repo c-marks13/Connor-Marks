@@ -14,6 +14,7 @@ html {
     }
 }
 
+/* ----------------------- Nav Section Styles ------------------------ */
 /* Styles the top navigation bar */
 #Top-Nav{
     overflow: hidden;
@@ -127,6 +128,9 @@ ul.Top-Nav-Items-List li.Item>a:hover{
     cursor: pointer;
     background-color: white;
 }
+/* ------------------------------------------------------------------- */
+
+/* ----------------------- Top Section Styles ------------------------ */
 
 /* Styles the background of the 'Top Section' of the webpage*/
 #Top-Section{
@@ -167,7 +171,9 @@ ul.Top-Nav-Items-List li.Item>a:hover{
    margin: 10px auto 0px auto;
    max-width: 600px;
 }
+/* ------------------------------------------------------------------- */
 
+/* ----------------- General Content Section Styles ------------------ */
  section.content{
   font-size: 36px;
   background-color: grey;
@@ -188,30 +194,19 @@ section.content:nth-child(odd){
   background-color: #244aa3;
 }
 
-section.content#Experience>article>h2{
-  width: 350px;
-  padding-left: 20px;
-  background: #193370;
-  margin-bottom: 30px;
-}
-
-section.content#Education>h2{
-  width: 315px;
-  padding-left: 14px;
-  background: #244aa3;
-}
-
-section.content#Skills>article>h2{
-  width: 210px;
-  padding-left: 7px;
-  background: #244aa3;
-}
-
 section.content>article>h2, section.content>h2{
   display: block;
   margin: auto;
   border-radius: 8px;
   padding-top: 10px;
+}
+/* ------------------------------------------------------------------ */
+
+/* -------------------- Education Section Styles -------------------- */
+section.content#Education>h2{
+  width: 315px;
+  padding-left: 14px;
+  background: #244aa3;
 }
 
 td.UWL>img{
@@ -237,11 +232,20 @@ td.degree{
 td.degree, td.UWL{
   padding: 20px;
 }
-/* ------- Section Break ------- */
+/* ------------------------------------------------------------------- */
 
+/* -------------------- Experience Section Styles -------------------- */
 #Experience{
   height: auto;
 }
+
+section.content#Experience>article>h2{
+  width: 350px;
+  padding-left: 20px;
+  background: #193370;
+  margin-bottom: 30px;
+}
+
 
 #Experience>article>table{
   margin-right: 30px;
@@ -271,8 +275,14 @@ td.degree, td.UWL{
   padding: 5px;
 }
 
-/* ------- Section Break ------- */
+/* ------------------------------------------------------------------- */
 
+/* ---------------------- Skills Section Styles ---------------------- */
+section.content#Skills>article>h2{
+  width: 210px;
+  padding-left: 7px;
+  background: #244aa3;
+}
 
 #Skills-Table{
     border: 5px solid #244aa3;
@@ -300,7 +310,9 @@ td.degree, td.UWL{
     font-size: 40px;
   }
 }
+/* -------------------------------------------------------------------------- */
 
+/* ------------------------------ Footer Styles ----------------------------- */
 /* Styles the overall footer */
 footer{
     background-color: grey;
@@ -362,3 +374,4 @@ footer>div#bottom>p{
   margin: 0 auto;
   font-size: 12px;
 }
+/* ------------------------------------------------------------------- */
