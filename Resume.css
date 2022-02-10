@@ -14,6 +14,12 @@ html {
     }
 }
 
+/* Cleans up scroll bars */
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+
 /* ----------------------- Nav Section Styles ------------------------ */
 /* Styles the top navigation bar */
 #Top-Nav{
@@ -153,7 +159,7 @@ ul.Top-Nav-Items-List li.Item>a:hover{
   padding: 20px;
   border-radius: 20px;
   max-width: 800px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 #Top-Section>article>img{
