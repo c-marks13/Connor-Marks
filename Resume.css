@@ -16,8 +16,8 @@ html {
 
 /* Cleans up scroll bars */
 ::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0;
+  background: transparent;
   }
 
 /* ----------------------- Nav Section Styles ------------------------ */
@@ -251,7 +251,6 @@ section.content#Experience>article>h2{
   background: #193370;
   margin-bottom: 30px;
 }
-
 
 #Experience>article>table{
   margin-right: 30px;
