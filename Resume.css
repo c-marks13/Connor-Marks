@@ -263,27 +263,43 @@ section.content#Experience>article>h2{
   margin-right: 30px;
   font-family: serif;
   font-size: 25px;
-  border: 5px solid black;
   border-spacing: 0px;
-  margin: 25px auto;
+  margin: 25px auto 50px;
   width: 95vw;
   max-width: 820px;
+  color: black;
 }
 
 #Experience>article>table>caption{
   font-size: 35px;
+  color: white;
+  padding-bottom: 10px;
+  font-weight: bolder;
 }
 
-.responsibility:nth-child(odd){
-  background-color: grey;
+#subcaption>td, #subcaption2>td{
+  font-size: 29px;
+  color: white;
+  text-align: center;
 }
 
-.responsibility:nth-child(even){
-  background-color: black;
+#subcaption2>td{
+  padding-bottom: 20px;
 }
 
 .responsibility>td{
-  border: 2px solid black;
+  border: 5px solid #d6d6d6;
+}
+
+.responsibility:nth-child(odd){
+  background-color: #b3b3b3;
+}
+
+.responsibility:nth-child(even){
+  background-color: #d6d6d6;
+}
+
+.responsibility>td{
   padding: 5px;
 }
 
