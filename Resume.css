@@ -312,9 +312,8 @@ section.content#Skills>article>h2{
   background: #244aa3;
 }
 
+/*
 #Skills-Table{
-    border: 5px solid #244aa3;
-    border-radius: 10px;
     border-spacing: 0px;
 }
 
@@ -332,11 +331,29 @@ section.content#Skills>article>h2{
 .Skills-Row:nth-child(even){
   background-color: #d6d6d6;
 }
+*/
 
-@media screen and (min-width: 950px){
-  .skills{
-    font-size: 40px;
-  }
+.skills-list{
+  margin: 5px auto;
+  width: 44%;
+  padding-left: 30px;
+  font-family: serif;
+  height: auto;
+  float: left;
+}
+
+.skills-list>ul>li{
+  margin-top: 10px;
+}
+
+ #skills-lists{
+   width: 90%;
+   max-width: 820px;
+   margin: 50px auto;
+   height: auto;
+   overflow: auto;
+ }
+
 }
 /* -------------------------------------------------------------------------- */
 
@@ -348,6 +365,7 @@ footer{
 
 footer>div#top{
   height: 75px;
+  background-color: grey;
 }
 
 /* Styles h2 headings in the top section of the footer */
